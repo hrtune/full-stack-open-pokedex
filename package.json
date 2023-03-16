@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
-    "start-prod": "PORT=5001 node app.js",
+    "start-prod": "node app.js",
     "test": "jest",
     "eslint": "eslint './**/*.{js,jsx}'",
     "build": "webpack --mode production",
@@ -19,6 +19,9 @@
   "keywords": [
     "fullstack-open"
   ],
+  "engines": {
+    "node": "16.19.0"
+  },
   "author": "Smartly.io",
   "license": "ISC",
   "bugs": {
