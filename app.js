@@ -8,8 +8,7 @@ app.use(express.static('dist'))
 
 // for health check by fly.io
 app.get('/health', (req, res) => {
-  throw 'error...'
-  // eslint-disable-next-line no-unreachable
+  // throw 'error...'
   res.send('ok')
 })
 
