@@ -53,9 +53,9 @@ PORT = "8080"
       [services.http_checks.headers]
 
   [[services.script_checks]]
-      command       = "./health_check.sh"
-      args          = []
+      command       = "sh"
+      args          = ["health_check.sh"]
       grace_period  = "1s"
       interval      = "5s"
       restart_limit = 0
-      timeout       = "10s"
+      timeout       = 2000
