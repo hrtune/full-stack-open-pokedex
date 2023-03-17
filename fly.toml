@@ -53,8 +53,8 @@ PORT = "8080"
       [services.http_checks.headers]
 
   [[services.script_checks]]
-      command       = "sh"
-      args          = ["health_check.sh"]
+      command       = "/app/health_check.sh"
+      args          = []
       grace_period  = "1s"
       interval      = "5s"
       restart_limit = 0
