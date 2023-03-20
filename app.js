@@ -17,6 +17,11 @@ app.get('/version', (req, res) => {
   res.send('9')
 })
 
+// hello
+app.get('/hello', (req, res) => {
+  res.send('Hello!')
+})
+
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`server started on port ${PORT}`)
