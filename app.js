@@ -19,7 +19,7 @@ app.get('/version', (req, res) => {
 
 // hello
 app.get('/hello', (req, res) => {
-  res.send('<html><h1>Hello!</h1></html>')
+  res.send('<html><body><h1>Hello!</h1></body></html>')
 })
 
 app.listen(PORT, () => {
