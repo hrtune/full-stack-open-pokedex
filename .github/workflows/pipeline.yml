@@ -38,6 +38,7 @@ jobs:
         env: 
             FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
       
+  # automatically increment patch version
   tag_release:
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-20.04
