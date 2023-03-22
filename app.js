@@ -14,7 +14,7 @@ app.get('/health', (req, res) => {
 
 // notify the version of this app
 app.get('/version', (req, res) => {
-  res.send('9')
+  res.send('0.0.2')
 })
 
 // hello
