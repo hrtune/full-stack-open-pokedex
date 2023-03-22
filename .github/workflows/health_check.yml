@@ -1,11 +1,8 @@
 name: Periodic health checks
 
 on:
-  push: # for testing purpose
-    branches:
-      - master
   schedule:
-    - cron:  '30 5,17 * * *'
+    - cron:  '*/5 * * * *'
     
 jobs:
   url_health_check:
